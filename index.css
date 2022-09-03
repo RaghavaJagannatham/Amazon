@@ -1,0 +1,75 @@
+#img{
+   position: absolute;
+   top: 8px;
+   left: 60em;
+   width: 250px;
+   height: 80px;
+   opacity: 0.4;
+}
+body {
+
+background-image: url('https://i.pinimg.com/originals/df/8f/c7/df8fc7b6e938ab7fc896b1028739783f.png');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+flex-direction: column;
+align-content: center;
+justify-content: center;
+align-items: center;
+}
+#heading{
+color: rgb(24, 181, 243);
+font-family: 'BioRhyme Expanded', serif;
+}
+#form{
+width: 100%;
+margin: 20px;
+padding: 10px;
+border: 2px solid rgba(255,255,255,0.2);
+background: rgba(255,255,255,0.4);
+border-radius: 25px;
+z-index: 2;
+overflow: hidden;
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+}
+#name, #dateandtime,#message{
+border: 2px solid rgba(255,255,255,0.2);
+background: rgba(255,255,255,0.4);
+border-radius: 25px;
+z-index: 2;
+overflow: hidden;
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+
+}
+/*  */
+#dateandtime{
+margin-top: 20px;
+margin-bottom: 20px;
+}
+marquee{
+   font-size: 25px;
+   color: darkblue;
+   width: 100%;
+}
+
+#test{
+margin: 10px;
+/* margin-bottom: 5rem; */
+padding-left: 15px;
+padding-right: 15px;
+padding-top: 5px;
+padding-bottom: 5px;
+/* border: 1px solid rgb(132, 194, 215); */
+background: rgba(255,255,255,0.4);
+color: black;
+z-index: 2;
+
+}
+#test:hover {
+border: 1px solid #0a0a0a;
+color: rgb(24, 181, 243);
+background: rgba(192, 224, 238, 0.192);
+} 

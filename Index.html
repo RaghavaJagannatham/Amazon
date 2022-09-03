@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>ITR Assistance</title>
+    <!-- <link rel="stylesheetR" href="./index.css"> -->
+    
+
+</head>
+<body id="containers">
+    <!-- <div id="note"> -->
+        <marquee behavior="scroll" direction="right">Note :  The Local Time zone should be in IST (UTC+5:30) (Chennai/Kolkata/New Delhi)</marquee>
+    <!-- </div> -->
+    
+    <div  class="container py-5">
+        <div id="form" class="row"><!--id = row-->
+            
+            
+            <img id="img" src="data:image/png;base64,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">
+            
+            <!-- <div class="col-lg-5 col-md-8 mx-auto shadow border bg-white p-4 rounded"> -->
+            <div class="col-lg-5 col-md-8 mx-auto  p-4 rounded"> 
+                
+                <h2 id="heading" class="text-center fw-bold mb-3">ITR Assistance</h2>
+                
+                <form name="google-sheet">
+                    <div id="form_alerts"></div>
+                    <div class="form-group mb-3">
+                        <label for="name" class="form-label">SIM ID</label>
+                        <input type="text" id="name" name="SIM ID" class="form-control" placeholder="Enter your SIM ID" required>
+
+                        <label for="name" class="form-label">Destination</label>
+                        <input type="text" id="name" name="Destination" class="form-control" placeholder="Destination" required>
+                        <label for="name" class="form-label">Trailer ID</label>
+                        <input type="text" id="name" name="Trailer ID" class="form-control" placeholder="Trailer ID" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="dateAndTime">Date and Time</label>
+                        <input type="datetime-local" class="form-control" id="dateandtime" name="ITR to be initiated at" step="2">
+                    </div>
+                    <div class="form-group col-md-6" id="radiobtns">
+                        <p>Time Zone</p>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Time Zone" id="PST" value="PST">
+                            <label class="form-check-label" for="PST">PST</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Time Zone" id="EST" value="EST">
+                            <label class="form-check-label" for="EST">EST</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Time Zone" id="CST" value="CST">
+                            <label class="form-check-label" for="CST">CST</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Time Zone" id="MST" value="MST">
+                            <label class="form-check-label" for="MST">MST</label>
+                        </div>
+                    </div>
+                    
+                    
+                    
+
+                    <div style="margin-top: 25px;">
+                    <span  id="test" onclick="fn1()">Convert to Local Time</span>
+                    <p style="margin-top: 25px;" id="demo"></p>
+                    </div>
+                    
+                    <br>
+                    <label >Date and Time in IST</label>
+                    <input type="datetime-local" class="form-control" id="dateandtime" name="ITR to be initiated (Local time zone)">
+                    <div class="form-group col-md-6" id="radiobtns">
+                        <p>Trailer Detachable</p>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Trailer Detachable" id="Yes" value="Yes">
+                            <label class="form-check-label" for="Yes">YES</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Trailer Detachable" id="No" value="No">
+                            <label class="form-check-label" for="No">No</label>
+                        </div>
+                    </div>
+                    <!-- <p id="convertedTime" name=""></p> -->    
+                    
+                    <div class="form-group mb-3">
+                        <label for="message" class="form-label">Comments</label>
+                        <textarea id="message" name="Additional Comments" class="form-control" placeholder="Enter your Comments" rows="2"></textarea>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary me-2" id="test" type="submit">Submit</button>
+                        <button class="btn btn-danger" id="test" type="reset">Clear</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
